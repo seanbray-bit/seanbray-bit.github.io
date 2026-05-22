@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AirLogBook</title>
+  <meta name="description" content="AirLogBook is an aircraft spotting log for iPhone. Scan registrations, save aircraft photos, dates, locations, and notes.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #071c2b;
+      --muted: #536879;
+      --line: #d8e3ea;
+      --blue: #1687d9;
+      --green: #1d9f76;
+      --paper: #f6fafc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #07121c 0%, #eff6f9 58%, #ffffff 100%);
+      color: var(--ink);
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+    main {
+      width: min(100%, 560px);
+      background: rgba(255, 255, 255, 0.97);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: 0 24px 70px rgba(4, 16, 27, 0.18);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 44px;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.45;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-top: 12px;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+    }
+    .primary { background: var(--blue); color: #fff; }
+    .secondary { background: #eaf7f2; color: #0b6e52; border: 1px solid #bfe7d9; }
+    .quiet { background: var(--paper); color: var(--ink); border: 1px solid var(--line); }
+    ul {
+      margin: 0 0 22px;
+      padding-left: 22px;
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 17px;
+    }
+    small {
+      display: block;
+      margin-top: 20px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AirLogBook</h1>
+    <p>Aircraft spotting log for iPhone. Scan registrations, save aircraft photos, dates, locations, and notes.</p>
+    <ul>
+      <li>Log aircraft sightings from photos</li>
+      <li>Scan visible registrations</li>
+      <li>Save date, location, notes, and aircraft details</li>
+      <li>Keep unknown sightings for later review</li>
+    </ul>
+    <a class="primary" href="https://testflight.apple.com/join/sqmvg7hg">Try the TestFlight beta</a>
+    <a class="secondary" href="https://apps.apple.com/app/id6766033287">App Store link after approval</a>
+    <a class="quiet" href="https://seanbray-bit.github.io/">Privacy Policy</a>
+    <small>The public TestFlight link will accept testers after Apple approves the external beta build. Follow this page for the current link.</small>
+  </main>
+</body>
+</html>
