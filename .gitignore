@@ -1,0 +1,26 @@
+.DS_Store
+
+# Xcode local user state
+*.xcuserstate
+xcuserdata/
+*.moved-aside
+DerivedData/
+
+# Build products and signed archives
+build/
+*.xcarchive/
+*.ipa
+*.dSYM/
+
+# Signing / local export files
+*.mobileprovision
+*.p12
+*.cer
+ExportOptions.plist
+UploadOptions.plist
+
+# Generated preview thumbnails
+TestFlightQR/rendered/
+TestFlightQR/rendered-football/
+TestFlightQR/app-icon-rounded-for-pdf.png
+TestFlightQR/app-icon-rounded-for-football-pdf.png
