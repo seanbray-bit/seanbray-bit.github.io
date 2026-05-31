@@ -42,7 +42,7 @@ Date: 29 May 2026
 - Build delivery ID: `b76b23a8-ce5b-456c-93fb-e1cda593a746`
 - TestFlight public link: https://testflight.apple.com/join/cJBzEJKQ
 
-## Version 1.1 - Build 2
+## Version 1.0 - Build 2
 
 Date: 31 May 2026
 
@@ -78,7 +78,7 @@ Date: 31 May 2026
 - App Store Connect upload succeeded on 31 May 2026 at 19:03 local time.
 - Upload status from Xcode: uploaded package is processing.
 
-## Version 1.1 - Build 3
+## Version 1.0 - Build 3
 
 Date: 31 May 2026
 
