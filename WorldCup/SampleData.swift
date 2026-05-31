@@ -182,6 +182,28 @@ enum SampleData {
         Standing(teamID: $0.id, played: 0, won: 0, drawn: 0, lost: 0, goalsFor: 0, goalsAgainst: 0)
     }
 
+    static func upcomingFixtures(from date: Date = .now, limit: Int) -> [Fixture] {
+        let upcoming = fixtures
+            .filter { $0.date >= date }
+            .sorted { $0.date < $1.date }
+
+        if upcoming.isEmpty {
+            return Array(fixtures.sorted { $0.date > $1.date }.prefix(limit))
+        }
+
+        return Array(upcoming.prefix(limit))
+    }
+
+    static func nextFixture(from date: Date = .now) -> Fixture {
+        upcomingFixtures(from: date, limit: 1).first ?? fixtures[0]
+    }
+
+    static func fixtures(at stadium: String) -> [Fixture] {
+        fixtures
+            .filter { $0.stadium == stadium }
+            .sorted { $0.date < $1.date }
+    }
+
     static func teamName(_ id: String) -> String {
         if let team = teams.first(where: { $0.id == id }) {
             return team.name

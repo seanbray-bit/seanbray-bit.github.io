@@ -44,24 +44,34 @@ Date: 29 May 2026
 
 ## Version 1.1 - Build 2
 
-Date:
+Date: 31 May 2026
 
 ### Added
 
--
+- Home screen countdown for the next upcoming match.
+- Opening game spotlight card.
+- Featured venues preview on the Home screen.
+- New Venues tab.
+- Venue detail pages showing all games played at each stadium.
+- Guide updated with countdown, opening game, and venue explorer features.
 
 ### Changed
 
--
+- Build number increased from `1` to `2` for the next TestFlight upload.
 
 ### Fixed
 
--
+- No bug fixes in this build.
 
 ### Tester Notes
 
--
+- Check the countdown timer updates every second.
+- Confirm the app shows the correct next upcoming match.
+- Open the Venues tab and check each stadium lists its matches.
+- Open venue fixture cards and test Calendar/Reminder buttons.
+- Check Home screen layout on smaller and larger iPhones.
 
 ### App Store Connect Notes
 
--
+- Upload as version `1.0`, build `2`.
+- Suggested TestFlight note: Adds a next-match countdown, opening game spotlight, and venue explorer.
