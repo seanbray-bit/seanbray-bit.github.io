@@ -14,7 +14,33 @@
 		2A0000010000000000000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A0000010000000000000015 /* Assets.xcassets */; };
 		2A0000010000000000000006 /* EventKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000010000000000000016 /* EventKitManager.swift */; };
 		2A0000010000000000000007 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2A0000010000000000000017 /* PrivacyInfo.xcprivacy */; };
+		2B0000010000000000000001 /* NextMatchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0000010000000000000011 /* NextMatchWidget.swift */; };
+		2B0000010000000000000002 /* NextMatchWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2B0000010000000000000010 /* NextMatchWidgetExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B0000010000000000000022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A0000010000000000000070 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B0000010000000000000040;
+			remoteInfo = NextMatchWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B0000010000000000000021 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2B0000010000000000000002 /* NextMatchWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2A0000010000000000000010 /* World Football Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Football Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,10 +51,20 @@
 		2A0000010000000000000015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A0000010000000000000016 /* EventKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventKitManager.swift; sourceTree = "<group>"; };
 		2A0000010000000000000017 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		2B0000010000000000000010 /* NextMatchWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NextMatchWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B0000010000000000000011 /* NextMatchWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchWidget.swift; sourceTree = "<group>"; };
+		2B0000010000000000000012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2A0000010000000000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B0000010000000000000020 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2A0000010000000000000031 /* WorldCup */,
+				2B0000010000000000000031 /* NextMatchWidget */,
 				2A0000010000000000000032 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,8 +101,18 @@
 			isa = PBXGroup;
 			children = (
 				2A0000010000000000000010 /* World Football Tracker.app */,
+				2B0000010000000000000010 /* NextMatchWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2B0000010000000000000031 /* NextMatchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2B0000010000000000000011 /* NextMatchWidget.swift */,
+				2B0000010000000000000012 /* Info.plist */,
+			);
+			path = NextMatchWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,15 +125,34 @@
 				2A0000010000000000000050 /* Sources */,
 				2A0000010000000000000020 /* Frameworks */,
 				2A0000010000000000000060 /* Resources */,
+				2B0000010000000000000021 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2B0000010000000000000023 /* PBXTargetDependency */,
 			);
 			name = "World Cup";
 			productName = "World Cup";
 			productReference = 2A0000010000000000000010 /* World Football Tracker.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2B0000010000000000000040 /* NextMatchWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B0000010000000000000080 /* Build configuration list for PBXNativeTarget "NextMatchWidgetExtension" */;
+			buildPhases = (
+				2B0000010000000000000050 /* Sources */,
+				2B0000010000000000000020 /* Frameworks */,
+				2B0000010000000000000060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NextMatchWidgetExtension;
+			productName = NextMatchWidgetExtension;
+			productReference = 2B0000010000000000000010 /* NextMatchWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +165,9 @@
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					2A0000010000000000000040 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					2B0000010000000000000040 = {
 						CreatedOnToolsVersion = 26.3;
 					};
 				};
@@ -117,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				2A0000010000000000000040 /* World Cup */,
+				2B0000010000000000000040 /* NextMatchWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +198,13 @@
 			files = (
 				2A0000010000000000000005 /* Assets.xcassets in Resources */,
 				2A0000010000000000000007 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B0000010000000000000060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +223,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B0000010000000000000050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0000010000000000000001 /* NextMatchWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B0000010000000000000023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B0000010000000000000040 /* NextMatchWidgetExtension */;
+			targetProxy = 2B0000010000000000000022 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2A0000010000000000000090 /* Debug */ = {
@@ -272,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = MYMT7X3SXV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -305,7 +398,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = MYMT7X3SXV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -332,6 +425,56 @@
 			};
 			name = Release;
 		};
+		2B0000010000000000000092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = MYMT7X3SXV;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NextMatchWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sean.WorldCup.NextMatchWidget;
+				PRODUCT_NAME = NextMatchWidgetExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B0000010000000000000093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = MYMT7X3SXV;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NextMatchWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sean.WorldCup.NextMatchWidget;
+				PRODUCT_NAME = NextMatchWidgetExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -349,6 +492,15 @@
 			buildConfigurations = (
 				2A0000010000000000000092 /* Debug */,
 				2A0000010000000000000093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B0000010000000000000080 /* Build configuration list for PBXNativeTarget "NextMatchWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B0000010000000000000092 /* Debug */,
+				2B0000010000000000000093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

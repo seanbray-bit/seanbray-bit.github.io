@@ -131,6 +131,8 @@ Ask testers to answer the daily quiz, check streak behaviour, and report if any 
 
 ### Today Widget
 
+Status: Added in build 3.
+
 #### Idea
 
 Add a simple iPhone Home Screen widget that shows the next match.
@@ -242,8 +244,8 @@ Push notifications are valuable, but goal and full-time notifications will need 
 
 ### Version 1.2
 
-- Add Today Widget for next match.
 - Add stadium list with fixtures by venue.
+- Improve Today Widget with favourite-team options and today's matches.
 
 ### Version 1.3
 

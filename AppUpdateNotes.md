@@ -77,3 +77,34 @@ Date: 31 May 2026
 - Suggested TestFlight note: Adds a next-match countdown, opening game spotlight, and venue explorer.
 - App Store Connect upload succeeded on 31 May 2026 at 19:03 local time.
 - Upload status from Xcode: uploaded package is processing.
+
+## Version 1.1 - Build 3
+
+Date: 31 May 2026
+
+### Added
+
+- Real iPhone Home Screen widget using WidgetKit.
+- Small widget showing the next match countdown, fixture, and kick-off time.
+- Medium widget showing stage, teams, stadium, countdown, and kick-off time.
+- Widget uses a football pitch-style background.
+
+### Changed
+
+- Build number increased from `2` to `3` because build `2` has already been uploaded to App Store Connect.
+
+### Tester Notes
+
+- Install build 3 from TestFlight.
+- Long-press the iPhone Home Screen, tap `+`, search for World Football Tracker, and add the Next Match widget.
+- Check the small and medium widget sizes.
+- Confirm the widget shows the next match, countdown, venue, and kick-off time clearly.
+- Tap the widget and confirm it opens the app.
+- Keep checking Home, Fixtures, Groups, Teams, Venues, and Guide as before.
+
+### App Store Connect Notes
+
+- Upload as version `1.0`, build `3`.
+- Suggested TestFlight note: Adds a real iPhone Home Screen widget for the next match countdown.
+- App Store Connect upload succeeded on 31 May 2026 at 19:23 local time.
+- Upload status from Xcode: uploaded package is processing.

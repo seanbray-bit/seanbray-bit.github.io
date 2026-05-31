@@ -6,7 +6,7 @@
 - SKU suggestion: `world-football-tracker-ios-2026`
 - Category: Sports
 - Version: `1.0`
-- Build: `1`
+- Build: `3`
 - Copyright: Sean Bray
 - Primary language: English (U.K.)
 - Platform: iOS
@@ -92,6 +92,16 @@ The app does not contain third-party logos, video, audio, or copyrighted media. 
 - Uploaded build: version `1.0`, build `2`
 - Upload status from Xcode: uploaded package is processing.
 - Build 2 features: next-match countdown, opening game spotlight, featured venues, and Venues tab.
+
+### Build 3 Notes
+
+- Archive created: `build/WorldFootballTracker-Build3.xcarchive`
+- App Store Connect upload: uploaded successfully on 2026-05-31 at 19:23 local time.
+- Uploaded build: version `1.0`, build `3`
+- Build 3 feature: real iPhone Home Screen widget for the next match countdown.
+- Widget target: `NextMatchWidgetExtension`
+- Widget sizes: small and medium.
+- Upload status from Xcode: uploaded package is processing.
 
 ## Description Draft
 World Football Tracker is an unofficial tournament companion for following the 2026 football competition. Browse fixtures, groups, teams, venues, match times, and knockout rounds in one bright, simple iPhone app. Add selected fixtures to Calendar or Reminders so you do not miss key matches.
@@ -199,13 +209,17 @@ Suggested review steps:
 
 World Football Tracker is an unofficial tournament companion for following the 2026 football competition. Browse fixtures, groups, teams, venues, match times, knockout rounds, and stadium schedules.
 
-Build 2 adds a next-match countdown, opening game spotlight, featured venues, and a new Venues tab showing which games are played at each stadium.
+Build 3 adds a real iPhone Home Screen widget. Testers can add the Next Match widget to their Home Screen to see the upcoming match countdown without opening the app.
 
 This app is not affiliated with FIFA or the tournament organisers.
 
 ### What To Test
 
 - Check the Home screen countdown timer for the next upcoming match.
+- Add the Next Match widget to the iPhone Home Screen.
+- Check the small and medium widget sizes.
+- Confirm the widget shows the next match, countdown, venue, and kick-off time clearly.
+- Tap the widget and confirm it opens the app.
 - Confirm the opening game spotlight appears clearly on the Home screen.
 - Browse the Featured Venues section on the Home screen.
 - Open the new Venues tab.
