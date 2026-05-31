@@ -85,6 +85,14 @@ The app does not contain third-party logos, video, audio, or copyrighted media. 
 - Export provisioning profile: `iOS Team Store Provisioning Profile: com.sean.WorldCup`
 - App Store Connect app record created for bundle ID `com.sean.WorldCup`.
 
+### Build 2 Upload
+
+- Archive created: `build/WorldFootballTracker-Build2.xcarchive`
+- App Store Connect upload: uploaded successfully on 2026-05-31 at 19:03 local time.
+- Uploaded build: version `1.0`, build `2`
+- Upload status from Xcode: uploaded package is processing.
+- Build 2 features: next-match countdown, opening game spotlight, featured venues, and Venues tab.
+
 ## Description Draft
 World Football Tracker is an unofficial tournament companion for following the 2026 football competition. Browse fixtures, groups, teams, venues, match times, and knockout rounds in one bright, simple iPhone app. Add selected fixtures to Calendar or Reminders so you do not miss key matches.
 

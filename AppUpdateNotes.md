@@ -75,3 +75,5 @@ Date: 31 May 2026
 
 - Upload as version `1.0`, build `2`.
 - Suggested TestFlight note: Adds a next-match countdown, opening game spotlight, and venue explorer.
+- App Store Connect upload succeeded on 31 May 2026 at 19:03 local time.
+- Upload status from Xcode: uploaded package is processing.
