@@ -18,6 +18,22 @@ struct Team: Identifiable, Hashable {
     let squadNotes: String
 }
 
+struct SquadPlayer: Identifiable, Hashable {
+    let id: String
+    let number: Int?
+    let name: String
+    let position: String
+    let club: String
+
+    init(number: Int? = nil, name: String, position: String, club: String) {
+        self.number = number
+        self.name = name
+        self.position = position
+        self.club = club
+        self.id = "\(number.map(String.init) ?? "na")-\(name.lowercased())"
+    }
+}
+
 struct Fixture: Identifiable, Hashable {
     let id: Int
     let stage: String

@@ -108,3 +108,33 @@ Date: 31 May 2026
 - Suggested TestFlight note: Adds a real iPhone Home Screen widget for the next match countdown.
 - App Store Connect upload succeeded on 31 May 2026 at 19:23 local time.
 - Upload status from Xcode: uploaded package is processing.
+
+## Version 1.0 - Build 4
+
+Date: 31 May 2026
+
+### Added
+
+- Basic squad section on team detail pages.
+- Simple player rows showing shirt number, name, position, and club.
+- USA 26-player squad added from the official U.S. Soccer roster.
+- Clear empty state for teams whose confirmed squad has not been added yet.
+
+### Changed
+
+- Build number increased from `3` to `4` for the squad update.
+
+### Tester Notes
+
+- Open the Teams tab.
+- Open USA and check the Basic Squad section.
+- Confirm player numbers, names, positions, and clubs are readable.
+- Open other teams and check the empty squad message looks clear.
+- Continue testing fixtures, venues, the Home countdown, and the Home Screen widget.
+
+### App Store Connect Notes
+
+- Upload as version `1.0`, build `4`.
+- Suggested TestFlight note: Adds a basic squad section, starting with the USA 26-player squad.
+- App Store Connect upload succeeded on 31 May 2026 at 19:43 local time.
+- Upload status from Xcode: uploaded package is processing.

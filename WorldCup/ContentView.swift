@@ -197,6 +197,9 @@ struct TeamsView: View {
 
 struct TeamDetailView: View {
     let team: Team
+    private var squad: [SquadPlayer] {
+        SampleData.squad(for: team.id)
+    }
 
     var body: some View {
         List {
@@ -221,6 +224,19 @@ struct TeamDetailView: View {
             Section("Squad Notes") {
                 Text(team.squadNotes)
             }
+            Section("Basic Squad") {
+                if squad.isEmpty {
+                    ContentUnavailableView(
+                        "Squad not added yet",
+                        systemImage: "person.3",
+                        description: Text("Add the confirmed player list here once it has been checked.")
+                    )
+                } else {
+                    ForEach(squad) { player in
+                        SquadPlayerRow(player: player)
+                    }
+                }
+            }
         }
         .scrollContentBackground(.hidden)
         .background(AppTheme.page.ignoresSafeArea())
@@ -233,6 +249,40 @@ struct TeamDetailView: View {
         case "D": return .orange
         default: return .red
         }
+    }
+}
+
+struct SquadPlayerRow: View {
+    let player: SquadPlayer
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Text(player.number.map(String.init) ?? "-")
+                .font(.caption.weight(.bold))
+                .foregroundStyle(.white)
+                .frame(width: 34, height: 34)
+                .background(AppTheme.grass)
+                .clipShape(Circle())
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text(player.name)
+                    .font(.headline)
+                Text(player.club)
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+
+            Spacer()
+
+            Text(player.position)
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(AppTheme.sky)
+                .padding(.horizontal, 8)
+                .padding(.vertical, 4)
+                .background(AppTheme.sky.opacity(0.13))
+                .clipShape(Capsule())
+        }
+        .padding(.vertical, 3)
     }
 }
 

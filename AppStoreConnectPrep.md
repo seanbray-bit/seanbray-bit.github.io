@@ -6,7 +6,7 @@
 - SKU suggestion: `world-football-tracker-ios-2026`
 - Category: Sports
 - Version: `1.0`
-- Build: `3`
+- Build: `4`
 - Copyright: Sean Bray
 - Primary language: English (U.K.)
 - Platform: iOS
@@ -101,6 +101,15 @@ The app does not contain third-party logos, video, audio, or copyrighted media. 
 - Build 3 feature: real iPhone Home Screen widget for the next match countdown.
 - Widget target: `NextMatchWidgetExtension`
 - Widget sizes: small and medium.
+- Upload status from Xcode: uploaded package is processing.
+
+### Build 4 Notes
+
+- Archive created: `build/WorldFootballTracker-Build4.xcarchive`
+- App Store Connect upload: uploaded successfully on 2026-05-31 at 19:43 local time.
+- Uploaded build: version `1.0`, build `4`
+- Build 4 feature: basic squad section on team pages.
+- Squad data included: USA 26-player squad.
 - Upload status from Xcode: uploaded package is processing.
 
 ## Description Draft
@@ -209,17 +218,17 @@ Suggested review steps:
 
 World Football Tracker is an unofficial tournament companion for following the 2026 football competition. Browse fixtures, groups, teams, venues, match times, knockout rounds, and stadium schedules.
 
-Build 3 adds a real iPhone Home Screen widget. Testers can add the Next Match widget to their Home Screen to see the upcoming match countdown without opening the app.
+Build 4 adds a basic squad section to team pages, starting with the USA 26-player squad. Each player row shows shirt number, name, position, and club.
 
 This app is not affiliated with FIFA or the tournament organisers.
 
 ### What To Test
 
 - Check the Home screen countdown timer for the next upcoming match.
-- Add the Next Match widget to the iPhone Home Screen.
-- Check the small and medium widget sizes.
-- Confirm the widget shows the next match, countdown, venue, and kick-off time clearly.
-- Tap the widget and confirm it opens the app.
+- Open the Teams tab.
+- Open USA and check the Basic Squad section.
+- Confirm player numbers, names, positions, and clubs are readable.
+- Open other teams and check that the empty squad message is clear.
 - Confirm the opening game spotlight appears clearly on the Home screen.
 - Browse the Featured Venues section on the Home screen.
 - Open the new Venues tab.

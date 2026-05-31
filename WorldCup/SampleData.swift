@@ -182,6 +182,37 @@ enum SampleData {
         Standing(teamID: $0.id, played: 0, won: 0, drawn: 0, lost: 0, goalsFor: 0, goalsAgainst: 0)
     }
 
+    static let squadsByTeamID: [String: [SquadPlayer]] = [
+        "usa": [
+            SquadPlayer(number: 1, name: "Matt Turner", position: "Goalkeeper", club: "New England Revolution"),
+            SquadPlayer(number: 2, name: "Sergino Dest", position: "Defender", club: "PSV Eindhoven"),
+            SquadPlayer(number: 3, name: "Chris Richards", position: "Defender", club: "Crystal Palace"),
+            SquadPlayer(number: 4, name: "Tyler Adams", position: "Midfielder", club: "AFC Bournemouth"),
+            SquadPlayer(number: 5, name: "Antonee Robinson", position: "Defender", club: "Fulham FC"),
+            SquadPlayer(number: 6, name: "Auston Trusty", position: "Defender", club: "Celtic FC"),
+            SquadPlayer(number: 7, name: "Gio Reyna", position: "Midfielder", club: "Borussia Monchengladbach"),
+            SquadPlayer(number: 8, name: "Weston McKennie", position: "Midfielder", club: "Juventus"),
+            SquadPlayer(number: 9, name: "Ricardo Pepi", position: "Forward", club: "PSV Eindhoven"),
+            SquadPlayer(number: 10, name: "Christian Pulisic", position: "Forward", club: "AC Milan"),
+            SquadPlayer(number: 11, name: "Brenden Aaronson", position: "Forward", club: "Leeds United"),
+            SquadPlayer(number: 12, name: "Miles Robinson", position: "Defender", club: "FC Cincinnati"),
+            SquadPlayer(number: 13, name: "Tim Ream", position: "Defender", club: "Charlotte FC"),
+            SquadPlayer(number: 14, name: "Sebastian Berhalter", position: "Midfielder", club: "Vancouver Whitecaps FC"),
+            SquadPlayer(number: 15, name: "Cristian Roldan", position: "Midfielder", club: "Seattle Sounders FC"),
+            SquadPlayer(number: 16, name: "Alex Freeman", position: "Defender", club: "Villarreal CF"),
+            SquadPlayer(number: 17, name: "Malik Tillman", position: "Midfielder", club: "Bayer Leverkusen"),
+            SquadPlayer(number: 18, name: "Max Arfsten", position: "Defender", club: "Columbus Crew"),
+            SquadPlayer(number: 19, name: "Haji Wright", position: "Forward", club: "Coventry City"),
+            SquadPlayer(number: 20, name: "Folarin Balogun", position: "Forward", club: "AS Monaco"),
+            SquadPlayer(number: 21, name: "Timothy Weah", position: "Forward", club: "Olympique Marseille"),
+            SquadPlayer(number: 22, name: "Mark McKenzie", position: "Defender", club: "Toulouse"),
+            SquadPlayer(number: 23, name: "Joe Scally", position: "Defender", club: "Borussia Monchengladbach"),
+            SquadPlayer(number: 24, name: "Matt Freese", position: "Goalkeeper", club: "New York City FC"),
+            SquadPlayer(number: 25, name: "Chris Brady", position: "Goalkeeper", club: "Chicago Fire FC"),
+            SquadPlayer(number: 26, name: "Alejandro Zendejas", position: "Forward", club: "Club America")
+        ]
+    ]
+
     static func upcomingFixtures(from date: Date = .now, limit: Int) -> [Fixture] {
         let upcoming = fixtures
             .filter { $0.date >= date }
@@ -202,6 +233,10 @@ enum SampleData {
         fixtures
             .filter { $0.stadium == stadium }
             .sorted { $0.date < $1.date }
+    }
+
+    static func squad(for teamID: String) -> [SquadPlayer] {
+        squadsByTeamID[teamID] ?? []
     }
 
     static func teamName(_ id: String) -> String {
