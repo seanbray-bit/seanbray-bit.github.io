@@ -138,3 +138,33 @@ Date: 31 May 2026
 - Suggested TestFlight note: Adds a basic squad section, starting with the USA 26-player squad.
 - App Store Connect upload succeeded on 31 May 2026 at 19:43 local time.
 - Upload status from Xcode: uploaded package is processing.
+
+## Version 1.0 - Build 5
+
+Date: 2 June 2026
+
+### Added
+
+- Expanded Basic Squad section with all currently available confirmed World Cup squads from the checked public roster source.
+- 37 team squads added, covering 961 players.
+- Player rows include squad number, name, position, and club.
+
+### Changed
+
+- Build number increased from `4` to `5` for the expanded squad data update.
+- Teams without a confirmed available squad still show the clear "Squad not added yet" message.
+
+### Tester Notes
+
+- Open the Teams tab.
+- Check several teams with squads, including England, Brazil, Mexico, USA, France, Germany, Spain, and Uruguay.
+- Confirm player names, clubs, numbers, and position badges are readable.
+- Open teams still awaiting confirmed squad data and check the empty message is clear.
+- Continue testing fixtures, venues, the Home countdown, and the Home Screen widget.
+
+### App Store Connect Notes
+
+- Upload as version `1.0`, build `5`.
+- Suggested TestFlight note: Adds expanded World Cup squad data for 37 teams, with 961 player records.
+- App Store Connect upload succeeded on 2 June 2026 at 09:00 local time.
+- Upload status from Xcode: uploaded package is processing.

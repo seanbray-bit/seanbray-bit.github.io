@@ -218,7 +218,7 @@ Suggested review steps:
 
 World Football Tracker is an unofficial tournament companion for following the 2026 football competition. Browse fixtures, groups, teams, venues, match times, knockout rounds, and stadium schedules.
 
-Build 4 adds a basic squad section to team pages, starting with the USA 26-player squad. Each player row shows shirt number, name, position, and club.
+Build 5 expands the basic squad section to include 37 currently available confirmed World Cup squads, covering 961 player records. Each player row shows squad number, name, position, and club.
 
 This app is not affiliated with FIFA or the tournament organisers.
 
@@ -226,9 +226,10 @@ This app is not affiliated with FIFA or the tournament organisers.
 
 - Check the Home screen countdown timer for the next upcoming match.
 - Open the Teams tab.
-- Open USA and check the Basic Squad section.
+- Open several teams and check the Basic Squad section.
+- Check England, Brazil, Mexico, USA, France, Germany, Spain, and Uruguay.
 - Confirm player numbers, names, positions, and clubs are readable.
-- Open other teams and check that the empty squad message is clear.
+- Open teams without available confirmed squad data and check that the empty squad message is clear.
 - Confirm the opening game spotlight appears clearly on the Home screen.
 - Browse the Featured Venues section on the Home screen.
 - Open the new Venues tab.
@@ -246,7 +247,7 @@ This app is not affiliated with FIFA or the tournament organisers.
 
 The app does not require an account. No login, subscription, payment, special hardware, or server setup is needed.
 
-Build 2 includes a Home screen countdown, opening game spotlight, featured venues, and a Venues tab for browsing matches by stadium.
+Build 5 includes a Home screen countdown, opening game spotlight, featured venues, a Venues tab for browsing matches by stadium, a Home Screen widget, and expanded squad data for 37 teams.
 
 Suggested review steps:
 
