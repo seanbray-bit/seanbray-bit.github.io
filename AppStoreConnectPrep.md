@@ -6,7 +6,7 @@
 - SKU suggestion: `world-football-tracker-ios-2026`
 - Category: Sports
 - Version: `1.0`
-- Build: `4`
+- Build: `5`
 - Copyright: Sean Bray
 - Primary language: English (U.K.)
 - Platform: iOS
