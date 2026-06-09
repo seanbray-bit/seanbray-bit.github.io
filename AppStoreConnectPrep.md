@@ -35,7 +35,7 @@ Features:
 - Tournament guide covering the format and app features
 - Calendar events and Reminders for selected fixtures
 
-World Football Tracker is independent and is not affiliated with FIFA, the World Cup, or the tournament organisers.
+World Football Tracker is independent and is not affiliated with the tournament organisers.
 
 ### Keywords
 
@@ -43,7 +43,7 @@ football,soccer,fixtures,groups,teams,calendar,reminders,2026,tournament
 
 ### Support URL
 
-https://www.buymeacoffee.com/seansapps
+https://seanbray-bit.github.io/
 
 ### Marketing URL
 
@@ -115,7 +115,7 @@ The app does not contain third-party logos, video, audio, or copyrighted media. 
 ## Description Draft
 World Football Tracker is an unofficial tournament companion for following the 2026 football competition. Browse fixtures, groups, teams, venues, match times, and knockout rounds in one bright, simple iPhone app. Add selected fixtures to Calendar or Reminders so you do not miss key matches.
 
-This app is not affiliated with FIFA or the tournament organisers.
+This app is not affiliated with the tournament organisers.
 
 ## Keywords Draft
 football, soccer, fixtures, groups, teams, calendar, reminders, 2026, tournament
@@ -201,7 +201,7 @@ Suggested questionnaire answers:
 
 ### Review Notes
 
-World Football Tracker does not require an account, subscription, payment, special hardware, or server setup. The app is an unofficial tournament companion and does not use FIFA logos, official branding, or copyrighted media.
+World Football Tracker does not require an account, subscription, payment, special hardware, or server setup. The app is an unofficial tournament companion and does not use official logos, branding, or copyrighted media.
 
 Suggested review steps:
 
@@ -218,9 +218,9 @@ Suggested review steps:
 
 World Football Tracker is an unofficial tournament companion for following the 2026 football competition. Browse fixtures, groups, teams, venues, match times, knockout rounds, and stadium schedules.
 
-Build 5 expands the basic squad section to include 37 currently available confirmed World Cup squads, covering 961 player records. Each player row shows squad number, name, position, and club.
+Build 5 expands the basic squad section to include 37 currently available confirmed tournament squads, covering 961 player records. Each player row shows squad number, name, position, and club.
 
-This app is not affiliated with FIFA or the tournament organisers.
+This app is not affiliated with the tournament organisers.
 
 ### What To Test
 

@@ -6,7 +6,7 @@ World Football Tracker is an unofficial tournament companion for following the 2
 
 Build 3 adds a real iPhone Home Screen widget. Testers can add the Next Match widget to their Home Screen to see the upcoming match countdown without opening the app.
 
-This app is not affiliated with FIFA or the tournament organisers.
+This app is not affiliated with the tournament organisers.
 
 ## What To Test
 

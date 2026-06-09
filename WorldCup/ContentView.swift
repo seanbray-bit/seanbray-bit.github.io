@@ -2,6 +2,7 @@ import SwiftUI
 
 enum AppTheme {
     static let grass = Color(red: 0.08, green: 0.72, blue: 0.34)
+    static let deepGrass = Color(red: 0.03, green: 0.43, blue: 0.20)
     static let sun = Color(red: 1.0, green: 0.82, blue: 0.18)
     static let sky = Color(red: 0.05, green: 0.53, blue: 0.96)
     static let coral = Color(red: 1.0, green: 0.31, blue: 0.24)
@@ -127,7 +128,7 @@ struct GroupsView: View {
         NavigationStack {
             List {
                 ForEach(groups, id: \.self) { group in
-                    Section("Group \(group)") {
+                    Section {
                         ForEach(SampleData.teams.filter { $0.group == group }) { team in
                             HStack {
                                 Text(team.code)
@@ -145,6 +146,13 @@ struct GroupsView: View {
                             }
                             .listRowBackground(Color.white.opacity(0.78))
                         }
+                    } header: {
+                        Text("Group \(group)")
+                            .font(.title3.weight(.bold))
+                            .foregroundStyle(AppTheme.ink)
+                            .textCase(nil)
+                            .padding(.top, 8)
+                            .accessibilityAddTraits(.isHeader)
                     }
                 }
             }
@@ -368,7 +376,7 @@ struct GuideView: View {
                     Label("Calendar events and Reminders for fixtures", systemImage: "bell.badge")
                 }
                 Section("Disclaimer") {
-                    Text("Unofficial tournament companion. This app is not affiliated with FIFA or the tournament organisers.")
+                    Text("Unofficial tournament companion. This app is not affiliated with the tournament organisers.")
                 }
                 Section("Not Included") {
                     Text("No friends, accounts, private leagues, or leaderboards are included.")
@@ -521,11 +529,15 @@ struct VenuePreviewGrid: View {
                         .foregroundStyle(AppTheme.ink)
                         .lineLimit(2)
                     Label(stadium.city, systemImage: "mappin")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(AppTheme.ink.opacity(0.78))
                     Text("\(SampleData.fixtures(at: stadium.name).count) matches")
-                        .font(.caption.weight(.bold))
-                        .foregroundStyle(AppTheme.grass)
+                        .font(.caption.weight(.heavy))
+                        .foregroundStyle(AppTheme.deepGrass)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(AppTheme.deepGrass.opacity(0.12))
+                        .clipShape(Capsule())
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
@@ -639,8 +651,8 @@ struct FixtureCard: View {
                 Spacer()
                 Label(fixture.city, systemImage: "mappin")
             }
-            .font(.caption)
-            .foregroundStyle(.secondary)
+            .font(.caption.weight(.bold))
+            .foregroundStyle(AppTheme.ink.opacity(0.78))
 
             HStack(spacing: 10) {
                 Button {
@@ -743,8 +755,8 @@ struct StatTile: View {
                 .font(.title.weight(.bold))
                 .foregroundStyle(AppTheme.ink)
             Text(label)
-                .font(.caption)
-                .foregroundStyle(AppTheme.ink.opacity(0.7))
+                .font(.caption.weight(.bold))
+                .foregroundStyle(AppTheme.ink.opacity(0.82))
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()

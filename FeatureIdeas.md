@@ -97,7 +97,7 @@ Ask testers whether the daily team card is interesting and whether it makes them
 
 ### Idea
 
-Add one World Cup-style trivia question per day with a streak counter.
+Add one tournament-style trivia question per day with a streak counter.
 
 ### User Benefit
 
@@ -121,7 +121,7 @@ Makes the app more fun and gives users a daily reason to come back.
 
 ### Important Content Note
 
-Questions should avoid copyrighted wording or official branding. Use original trivia wording and factual information.
+Questions should avoid protected wording or branding. Use original trivia wording and factual information.
 
 ### TestFlight Notes
 

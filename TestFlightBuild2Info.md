@@ -6,7 +6,7 @@ World Football Tracker is an unofficial tournament companion for following the 2
 
 Build 2 adds a next-match countdown, opening game spotlight, featured venues, and a new Venues tab showing which games are played at each stadium.
 
-This app is not affiliated with FIFA or the tournament organisers.
+This app is not affiliated with the tournament organisers.
 
 ## What To Test
 

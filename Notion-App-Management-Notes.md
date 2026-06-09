@@ -91,7 +91,7 @@ These need a new build uploaded from Xcode:
 
 World Football Tracker is an unofficial tournament companion for following the 2026 football competition. Browse fixtures, groups, teams, venues, match times, and knockout rounds, then add selected fixtures to Calendar or Reminders.
 
-This app is not affiliated with FIFA or the tournament organisers.
+This app is not affiliated with the tournament organisers.
 
 ### What To Test
 
@@ -116,7 +116,7 @@ Features:
 - Tournament guide covering the format and app features
 - Calendar events and Reminders for selected fixtures
 
-World Football Tracker is independent and is not affiliated with FIFA, the World Cup, or the tournament organisers.
+World Football Tracker is independent and is not affiliated with the tournament organisers.
 
 ## TestFlight Sharing Materials
 

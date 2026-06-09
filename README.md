@@ -45,4 +45,4 @@ World Football Tracker does not collect user data, does not track users, does no
 
 ## Disclaimer
 
-World Football Tracker is independent and is not affiliated with FIFA, the World Cup, or the tournament organisers.
+World Football Tracker is independent and is not affiliated with the tournament organisers.

@@ -6,7 +6,7 @@ World Football Tracker is an unofficial tournament companion for following the 2
 
 Build 4 adds a basic squad section to team pages, starting with the USA 26-player squad. Each player row shows shirt number, name, position, and club.
 
-This app is not affiliated with FIFA or the tournament organisers.
+This app is not affiliated with the tournament organisers.
 
 ## What To Test
 

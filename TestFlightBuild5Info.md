@@ -13,7 +13,7 @@ Build 5 expands the Basic Squad section across the Teams area.
 
 ### Added
 
-- 37 currently available confirmed World Cup squads.
+- 37 currently available confirmed tournament squads.
 - 961 player records.
 - Player number, name, position, and club shown in each squad row.
 - Empty squad message remains for countries whose confirmed public squad was not available in the checked source.
@@ -48,4 +48,4 @@ Suggested review steps:
 
 ### Suggested TestFlight Update Text
 
-Build 5 adds expanded World Cup squad data for 37 teams, with 961 player records showing name, position, number, and club.
+Build 5 adds expanded tournament squad data for 37 teams, with 961 player records showing name, position, number, and club.
